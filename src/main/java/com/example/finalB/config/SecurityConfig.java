@@ -56,7 +56,8 @@ public class SecurityConfig {
 		CorsConfiguration config = new CorsConfiguration(); // cors 설정해주는 객체
 
 		config.addAllowedOrigin("http://localhost:3000"); // 3000번 포트로 요청이 오는 모든건 허용
-
+		config.addAllowedOrigin("https://balogin-741ae.web.app");
+		
 		UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource(); // 임폴트할때 reactive가 없는걸로
 		source.registerCorsConfiguration("/**", config); // (허용범위, 어디에 있는 소스인지)
 
